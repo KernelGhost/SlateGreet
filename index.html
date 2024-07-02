@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        <div id="login-background"></div>
+        <br>
+        <br>
+        <br>
+        <div id="login-box">
+            <img id="login-picture">
+            <br>
+            <form id="login-form" action="javascript: provide_secret();">
+                <div id="last"></div>
+                <div id="container">
+                    <div id="name"></div>
+                </div>
+                <div id="next"></div>
+                <div id="password-container">
+                    <input placeholder="" type="password" id="login-password" tabindex="1">
+                </div>
+                <button id="login-button" type="submit" tabindex="2">Login</button>
+            </form>
+        </div>
+        <div id="wrapper">
+            <div id="clock-box">
+                <div id="time-label"></div>
+            </div>
+        </div>
+        <div id="login-bar">
+            <img id="power" src="static/action-shutdown.png" onclick="lightdm.shutdown();">
+            <img id="power" src="static/action-reboot.png" onclick="lightdm.restart();">
+            <img id="power" src="static/action-hibernate.png" onclick="lightdm.hibernate();">
+            <img id="power" src="static/action-sleep.png" onclick="lightdm.suspend();">
+        </div>
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/clock.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

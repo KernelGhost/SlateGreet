@@ -1,0 +1,6 @@
+[theme]
+name=SlateGreet
+description=A minimalistic greeter.
+engine=nody-greeter
+url=index.html
+session=xfwm4
