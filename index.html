@@ -5,29 +5,28 @@
         <link rel="stylesheet" href="static/style.css">
     </head>
     <body>
-        <div id="login-background"></div>
-        <br>
-        <br>
-        <br>
+        <div id="clock-box">
+            <div id="time-label"></div>
+        </div>
         <div id="login-box">
-            <img id="login-picture">
-            <br>
-            <form id="login-form" action="javascript: provide_secret();">
-                <div id="last"></div>
-                <div id="container">
-                    <div id="name"></div>
+            <div id="picture-box">
+                <div id="prev">
+                    <img src="static/Arrow.svg" style="width: 16px; transform: rotate(180deg); float: right;">
                 </div>
-                <div id="next"></div>
+                <img id="login-picture">
+                <div id="next">
+                    <img src="static/Arrow.svg" style="width: 16px; float: left;">
+                </div>
+            </div>
+            <div id="username-container">
+                <div id="username"></div>
+            </div>
+            <form id="login-form" action="javascript: provide_secret();">
                 <div id="password-container">
                     <input placeholder="" type="password" id="login-password" tabindex="1">
                 </div>
                 <button id="login-button" type="submit" tabindex="2">Login</button>
             </form>
-        </div>
-        <div id="wrapper">
-            <div id="clock-box">
-                <div id="time-label"></div>
-            </div>
         </div>
         <div id="login-bar">
             <img id="power" src="static/action-shutdown.png" onclick="lightdm.shutdown();">

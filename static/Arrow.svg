@@ -1,0 +1,7 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 64" width="38" height="64">
+	<title>New Project</title>
+	<style>
+		.s0 { fill: #ffffff } 
+	</style>
+	<path id="Arrow" fill-rule="evenodd" class="s0" d="m35.9 28.4c2.1 2.1 2.1 5.4 0 7.5l-26.4 26.4c-2 2-5.4 2-7.4 0-2.1-2.1-2.1-5.4 0-7.5l22.6-22.6-22.6-22.7c-2.1-2-2.1-5.4 0-7.4 2-2.1 5.4-2.1 7.5 0 0 0 26.4 26.3 26.3 26.3z"/>
+</svg>
