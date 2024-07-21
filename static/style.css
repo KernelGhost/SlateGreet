@@ -102,6 +102,9 @@ body {
 	/* Set the image height to be 9 times the font size of its containing element. */
 	height:10em;
 
+	/* Set the image to be invisible initially. */
+	opacity: 0;
+
 	/* Ensure changes in image opacity occur gradually over 500ms. */
 	transition:opacity .5s ease-in-out;
 	-webkit-transition:opacity .5s ease-in-out;
