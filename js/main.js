@@ -104,12 +104,12 @@ function init() {
     // Select the first user within the list of users.
     select_user_from_list(0, true);
 
-    // Disable the 'next' and 'previous' buttons if there is only a single user on the system.
-    if (number_of_users == 1) {
-        document.getElementById('next').style.opacity = '0';
-        document.getElementById('next').style.pointerEvents = 'none';
-        document.getElementById('prev').style.opacity = '0';
-        document.getElementById('prev').style.pointerEvents = 'none';
+    // Enable the 'next' and 'previous' buttons if there are at least two users on the system.
+    if (number_of_users >= 2) {
+        document.getElementById('next').style.opacity = '1';
+        document.getElementById('next').style.pointerEvents = 'auto';
+        document.getElementById('prev').style.opacity = '1';
+        document.getElementById('prev').style.pointerEvents = 'auto';
     }
 
     // Handle click event on element with the ID 'prev'.

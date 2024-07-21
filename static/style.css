@@ -77,9 +77,17 @@ body {
 	/* Make the element 12 pixels wide. */
 	width:12px;
 
+	/* Hide the elements initially. */
+	opacity: 0;
+    pointer-events: none;
+
 	/* Align any flex items both horizontally and vertically. */
 	justify-content: center;
   	align-items: center;
+
+	/* Ensure changes in opacity occur gradually over 500ms. */
+	transition:opacity .5s ease-in-out;
+	-webkit-transition:opacity .5s ease-in-out;
 }
 
 #login-picture {
